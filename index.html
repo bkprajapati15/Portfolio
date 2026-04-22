@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>User-Portfolio</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            /* height: 70px; */
+            padding: 10px 0;
+            background: linear-gradient(90deg, #e3ffe7 0%, #6e89b7 100%);
+            display: flex;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        .ul {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+        }
+
+        .li {
+            list-style: none;
+        }
+
+        ul li a {
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #1d2557;
+        }
+
+
+        .logo img {
+            height: 50px;
+        }
+
+        .image-part {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #e3ffe7 0%, #6e89b7 100%);
+            justify-content: space-around;
+        }
+
+
+        .ben-boy img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+        }
+
+        .hello {
+            max-width: 500px;
+        }
+
+        .hello-1 {
+            margin-top: 20px;
+        }
+
+        .i-m {
+            font-size: clamp(18px, 4vw, 30px);
+            color: rgb(14, 25, 88);
+        }
+
+        .frontend {
+            font-size: clamp(24px, 6vw, 50px);
+            color: rgb(240, 78, 78);
+        }
+
+        .hello-2 {
+            font-size: clamp(16px, 3.5vw, 28px);
+            color: rgb(51, 23, 121);
+            margin-top: 16px;
+        }
+
+        .about-section {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+        }
+
+        .heading-name {
+            font-size: clamp(24px, 6vw, 50px);
+            margin: 30px;
+        }
+
+        .about-div-2 {
+            display: flex;
+            color: rgb(14, 25, 88);
+            justify-content: center;
+        }
+
+        .about-div-3 {
+            margin-top: 30px;
+        }
+
+        .enjoy {
+            margin-top: 10px;
+        }
+
+        .skill {
+            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+        }
+
+        .project-section {
+            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+        }
+
+        .icon-part {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-top: 55px;
+        }
+
+
+        .icon-size {
+            font-size: 70px;
+        }
+
+        .html {
+            color: orangered;
+        }
+
+        .css {
+            color: blue;
+        }
+
+        .javaScript {
+            color: rgb(254, 254, 0);
+        }
+
+        .react {
+            color: rgb(64, 168, 209);
+        }
+
+        .container-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            width: 300px;
+            height: 295px;
+            margin: 50px;
+            border-radius: 15px;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 10px gray;
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        }
+
+        .to-do {
+            margin-top: 8px;
+            color: rgb(14, 25, 88);
+
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: white;
+            border-radius: 2px;
+            padding: 3px;
+        }
+
+        .print {
+            color: green;
+            border-color: green;
+            border-radius: 5px;
+        }
+
+        .c-i {
+            color: red;
+            border-color: orangered;
+            border-radius: 5px;
+        }
+
+        .c-a {
+            color: orangered;
+            border-color: red;
+            border-radius: 5px;
+        }
+
+        .get-data {
+            margin: 5px;
+            color: rgb(14, 25, 88);
+
+        }
+
+        .mail {
+            display: flex;
+            gap: 20px;
+        }
+
+        .p {
+            margin-top: 5px;
+            font-size: clamp(16px, 3.5vw, 28px);
+
+            transition: all 0.5s ease-in;
+        }
+
+        .footer-part {
+            height: 240px;
+            background-color: rgb(36, 36, 36);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 40px;
+            color: aliceblue;
+        }
+
+        .email {
+            color: red;
+        }
+
+        .tel {
+            color: rgb(45, 45, 173);
+        }
+
+        .c-n {
+            color: aliceblue;
+        }
+
+        .ht-1 {
+            display: flex;
+            font-size: clamp(16px, 3vw, 28px);
+            font-weight: 520;
+            color: rgb(14, 25, 88);
+            justify-content: center;
+        }
+
+        .para {
+            font-size: clamp(16px, 3.5vw, 28px);
+            color: rgb(4, 72, 30);
+        }
+
+        .input-part {
+            color: white;
+            padding-left: 5px;
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        .htmL:hover {
+            color: orangered;
+        }
+
+        .CsS:hover {
+            color: blue;
+        }
+
+        .Js:hover {
+            color: rgb(254, 254, 0);
+        
+        }
+
+        .Rc:hover {
+            color: rgb(64, 168, 209);
+        }
+
+        .ml:hover {
+            font-size: 23px;
+            text-decoration: underline;
+        }
+
+        .btn-1:hover {
+            transform: scale(1.1);
+            box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+        }
+
+        .s-p-a-n {
+            color: rgb(240, 78, 78);
+        }
+          .ht-1:hover{
+                text-decoration: underline;
+            }
+
+        /* mobile */
+        @media (max-width: 768px) {
+
+            .ben-boy img {
+                width: 100%;
+                max-width: 380px;
+                height: auto;
+            }
+          
+
+            .navbar {
+                display: flex;
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+                gap: 20px;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+                gap: 20px;
+            }
+
+            .ul {
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+                place-items: center;
+                gap: 10px;
+            }
+
+            .image-part {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-section {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skill {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .icon-part {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .footer-part {
+                display: flex;
+                height: auto;
+                flex-direction: column;
+            }
+
+            .info {
+                display: flex;
+                margin-top: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="navbar">
+            <div class="header">
+                <div class="logo">
+                    <img src="ben-10.jpg" class="ims" alt="ben-10">
+                </div>
+                <div class="ul-li">
+                    <ul class="ul">
+                        <li class="li"><a href="#">Home</a></li>
+                        <li class="li"><a href="#">About</a></li>
+                        <li class="li"><a href="#">Contact us</a></li>
+                        <li class="li"><a href="#">Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="image-part">
+
+            <div class="ben-boy">
+                <img src="ben10_hd_no_bg.png" alt="Boy">
+            </div>
+            <div class="hello">
+                <div class="i-m">
+                    <h1>Hello, I'm Bhim</h1>
+                </div>
+                <div class="hello-1">
+                    <h2 class="frontend">A Frontend Developer</h2>
+                    <h3 class="hello-2">I love creating user-friendly websites.</h3>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="about-section">
+            <div>
+                <div class="about-div-2">
+                    <h1 class="heading-name">About Me
+                        <hr>
+                    </h1>
+                </div>
+                <div class="about-div-3">
+                    <div>
+                        <h4 class="para">I am a fresher frontend developer skilled in <span
+                                class="s-p-a-n">HTML</span>,<span class="s-p-a-n">CSS</span>,<span
+                                class="s-p-a-n">JavaScript</span> and <span class="s-p-a-n">React.Js</span>,
+                        </h4>
+                    </div>
+                    <div class="enjoy">
+                        <h4 class="para">I enjoy building and designing web application.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="about-div-2">
+                <h1 class=" heading-name">My Skills
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="icon-part">
+                <div class="ht-ml">
+                    <h1 class="icon-size"><i class="fa-brands fa-html5 html"></i></h1>
+                    <div class="ht-1 htmL">HTML</div>
+                </div>
+                <div>
+                    <h1 class="icon-size"><i class="fa-brands fa-css3-alt css"></i></h1>
+                    <div class="ht-1 CsS">CSS</div>
+                </div>
+                <div>
+                    <h1 class="icon-size"><i class="fa-brands fa-js javaScript"></i></h1>
+                    <div class="ht-1 Js">JAVASCRIPT</div>
+                </div>
+                <div>
+                    <h1 class="icon-size"><i class="fa-brands fa-react react"></i></h1>
+                    <div class="ht-1 Rc">REACT</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <div class="about-div-2">
+                <h1 class="heading-name">My Project
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="container-1">
+                <div class="container">
+                    <div>
+                        <div class="to-do">
+                            <h2>User Data Manager</h2>
+                        </div>
+                        <br>
+                        <div>
+                            <div>
+                                <input class="input-part" type="text" placeholder="Enter name">
+                            </div>
+                            <br>
+                            <div>
+                                <input class="input-part" type="email" placeholder="Enter email">
+                            </div>
+                            <br>
+                            <div>
+                                <input class="input-part" type="tel" placeholder="Enter contact">
+                            </div>
+                            <div class="btn">
+                                <button class="print btn-1">Print</button>
+                                <button class="c-i btn-1">Clear Input</button>
+                                <button class="c-a btn-1">Clear all</button>
+                            </div>
+                            <br>
+                            <hr>
+                            <div class="get-data">
+                                <h3>Get Data from Inputs</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-part">
+            <div class="about-div-2">
+                <h1 class="c-n heading-name">Contact Me
+                    <hr>
+                </h1>
+            </div>
+            <div class="info">
+                <div class="mail">
+                    <h2><i class="fa-regular fa-envelope email"></i></h2>
+                    <p class="p ml">87prajapatibheem59@gmail.com</p>
+                </div>
+
+                <div class="mail">
+                    <h2><i class="fa-solid fa-phone tel"></i></h2>
+                    <p class="p ml">+91 6294531784</p>
+                </div>
+
+                <div class="mail">
+                    <h2><i class="fa-brands fa-github git"></i></h2>
+                    <p class="p ml">https://github.com/bkprajapati15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
